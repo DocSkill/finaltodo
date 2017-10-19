@@ -1,10 +1,5 @@
 $(function () {
 	
-	// var data = (localStorage.getItem('todoList')) ? JSON.parse(localStorage.getItem('todoList')): {
-	// 	todo: [],
-	// 	completed: []
-	// };
-
 	
 
 	
@@ -30,9 +25,6 @@ $(function () {
 					$(this).removeClass('animated shake');
 				});
 		}
-
-		// data.todo.push(value);
-		// dataObjectUpdated();
 		
 	});
 
@@ -43,38 +35,13 @@ $(function () {
 		}
 	});
 
-	// function renderTodoList() {
-	// 	if (!data.todo.length && !data.completed.length) return;
 
-	// 	for (var i = 0; i < data.todo.length; i++) {
-	// 		var value = data.todo[i];
-	// 		addItemTodo(value);
-	// 	}
-
-	// 	for (var j = 0; j < data.completed.length; j++) {
-	// 		var value = data.completed[j];
-	// 		addItemTodo(value,true);
-	// 	}
-	// }
-
-	// function dataObjectUpdated() {
-	// 	localStorage.setItem('todoList', JSON.stringify(data));
-	// }
 
 	// Remove item
 	function removeItem() {
 		var item = this;
 		var parent = item.parentNode;
-		// var id = parent.Id;
-		// var value = item.innerText;
-
-		// if (id ==='todo') {
-		// 	data.todo.splice(data.todo.indexOf(value), 1);
-		// } else {
-		// 	data.completed.splice(data.completed.indexOf(value), 1);
-		// }
-
-		// dataObjectUpdated();
+		
 
 		parent.remove(item);
 
@@ -85,19 +52,6 @@ $(function () {
 	function completeItem() {
 		$(this).toggleClass('completedTaskCircle');
 		$(this.parentNode).toggleClass('completedTaskList');
-		// var parent = this.parentNode;
-		// var id = parent.id;
-		// var value = parent.innerText;
-
-		// if (id ==='todo') {
-		// 	data.todo.splice(data.todo.indexOf(value), 1);
-		// 	data.completed.push(value);
-		// } else {
-		// 	data.completed.splice(data.completed.indexOf(value), 1);
-		// 	data.completed.push(value);
-		// }
-
-		// dataObjectUpdated();
 
 
 	}
@@ -131,7 +85,7 @@ $(function () {
 				$(this).removeClass('animated slideInDown');
 			});
 
-		// dataObjectUpdated();
+	
 	
 	}
 
