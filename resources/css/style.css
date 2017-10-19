@@ -114,7 +114,7 @@ button {
 	width: 60px;
 	height: 60px;
 	position: absolute;
-	top: 70px;
+	top: 120px;
 	right: 80px;
 	z-index: 2;
 	border-radius: 50px;
@@ -207,4 +207,11 @@ ul.todo#completed li .circle {
 .completedTaskList {
 	text-decoration: line-through;
 	transition: 0.2s ease;
+}
+
+/* Media queries */
+@media screen and ( max-width: 375px ) {
+	.trashCan {
+		left: 280px;
+	}
 }
