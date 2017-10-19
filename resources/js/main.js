@@ -28,13 +28,6 @@ $(function () {
 		
 	});
 
-	$('#item').on('keydown', function (e) {
-		var value = this.value
-		if (e.code === 'Enter' && value ) {
-			addItemTodo(value);
-		}
-	});
-
 
 
 	// Remove item
@@ -59,7 +52,7 @@ $(function () {
 
 	// Adds new item to the list
 	function addItemTodo(text, completed) {
-		var list = (completed) ?$('#completed'):$('#todo');
+		var list = $('#todo');
 
 		var item = document.createElement('li');
 		item.innerText = text; 
@@ -85,8 +78,6 @@ $(function () {
 				$(this).removeClass('animated slideInDown');
 			});
 
-	
-	
 	}
 
 
