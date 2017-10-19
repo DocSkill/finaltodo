@@ -68,14 +68,11 @@ $(function () {
 
 		$(remove).on('click', removeItem);
 		
-		// for MS Edge
-		item.appendChild(circle);
-		item.appendChild(remove);
+
 
 		item.append(circle);
 		item.append(remove);
 
-		list.insertBefore('item', childNodes[0]);
 		list.prepend(item);
 
 		$('li').addClass('animated slideInDown').one('webkitanimationEnd mozanimationEnd MSanimationEnd onanimationend animationend',
