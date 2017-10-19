@@ -70,10 +70,10 @@ $(function () {
 		
 
 
-		item.append(circle);
-		item.append(remove);
+		item.appendChild(circle);
+		item.appendChild(remove);
 
-		list.prepend(item);
+		list.insertBefore(item, childNodes[0]);
 
 		$('li').addClass('animated slideInDown').one('webkitanimationEnd mozanimationEnd MSanimationEnd onanimationend animationend',
 			function() {
